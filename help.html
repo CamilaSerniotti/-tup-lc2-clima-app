@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TUP LC2 - TP Integrador</title>
     <!-- Estilos CSS -->
-    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/help.css">
 </head>
 <body>
     <header>
@@ -14,7 +14,7 @@
             <span>Clima App</span>
         </h1>
         <nav>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="./index.html">Clima</a></li>
                 <li><a href="./add-city.html">Agregar Ciudad</a></li>
                 <li class="current-page"><a href="#">Ayuda</a></li>
@@ -27,26 +27,28 @@
             <h4>
                 <p>Esta App te permite consultar el clima de una ciudad en particular utilizando la API de <a href=“https://openweathermap.org/api” target="_blank" >OpenWeatherMap.</a></p>
                 <p>Para poder consultar el clima, primero deberá <a href="./add-city.html">Agregar una ciudad</a> y luego seleccionar la Ciudad en cuestion desde la página <a href="./index.html">Clima.</a></p>
-                </section>
+                <section id="form-city-list" class="cuadros">
                     <form action="">
-                        <label for="Nombre">Nombre:</label>
-                        <input type="text" name="Nombre"/>
-                        <br>
-                        <label for="Email">Email:</label>
-                        <input type="email" name="Email"/>
-                        <br>
-                        <label for="campoDeTexto">Mensaje:</label>
-                        <textarea name="Texto" id="" cols="40" rows="10"></textarea>
-                        <br>
-                        <input type="button" value="Limpiar">
-                        <input type="button" value="Enviar">
+                        <p><label for="Nombre">Nombre:</label>
+                            <input type="text" name="Nombre"/>
+                            <br>
+                        <p><label for="Email">Email:</label>
+                            <input type="email" name="Email"/>
+                            <br>
+                        <p><label for="campoDeTexto">Mensaje:</label>
+                            <textarea name="Texto" id="" cols="40" rows="10"></textarea>
+                            <br>
+                        </p>
+                        <input type="reset" value="Limpiar" class="limpiar">
+                        <button class="enviar">Enviar</button>
+                        <p class="error">Ingrese un email que sea valido</p>
                     </form>
                 </section>
             </h4>
     </main>
     <footer>
         <p>
-        Desarrollado con sudor y lagrima - LC2
+            Desarrollado con ♥ - LC2
         </p>
     </footer>
 </body>

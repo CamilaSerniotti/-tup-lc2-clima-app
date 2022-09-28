@@ -31,6 +31,16 @@
         top: 0;
         width: 100%;
         background: var(--color-theme);
+        border-bottom-left-radius: 22px;
+        border-bottom-right-radius: 22px;
+        box-shadow: 0px 2px 3px 0px #5df2d6;
+        -webkit-box-shadow: 0px 2px 3px 0px #5df2d6;
+        -moz-box-shadow: 0px 2px 3px 0px #5df2d6;
+        border-color: #5df2d6;
+        background: #00594c;
+        background: linear-gradient(360deg, #00594c 0%, #0e958d 80%);
+        background: -webkit-linear-gradient(360deg, #00594c 0%, #0e958d 80%);
+        background: -moz-linear-gradient(360deg, #00594c 0%, #0e958d 80%);
     }
     nav>ul {
         display: flex;
@@ -45,14 +55,16 @@
         padding: 16px 12px;
         text-align: center;
         text-decoration: none;
-        font-size: lem;
+        font-size: 1em;
         font-weight: bold;
         color: var(--color-active);
     }
     nav li.current-page a {
-        color: var(--color-theme);
-        background-color: var(--color-active);
-        pointer-events: none;
+        display: inline-block;
+        padding: 10px 15px;
+        text-decoration: none;
+        color:white;
+        background-color: #038673;
     }
     main
         {
@@ -78,6 +90,7 @@
     }
     h3 {
         color: var(--color-theme);
+        margin: 8px 0;
     }
     h4 {
         color: var(--color-theme);
@@ -91,11 +104,18 @@
     footer {
         position: fixed;
         bottom: 0px;
-        background: var(--color-theme);
+        background: #00594c;
         width: 100%;
         text-align: center;
         padding-top: 10px;
         padding-bottom: 10px;
+        background: #00594c;
+        background: linear-gradient(360deg, #00594c 0%, #0e958d 80%);
+        background: -webkit-linear-gradient(360deg, #00594c 0%, #0e958d 80%);
+        background: -moz-linear-gradient(360deg, #00594c 0%, #0e958d 80%);
+        box-shadow: 0px -2px 3px 0px #5df2d6;
+        -webkit-box-shadow: 0px -2px 3px 0px #5df2d6;
+        -moz-box-shadow: 0px -2px 3px 0px #5df2d6;
     }
     footer p {
         font-size: small;
@@ -114,4 +134,79 @@
         padding-top: 20px;
         padding-bottom: 20px;
         }
+    }
+    .nav-item a:hover {
+        display: inline-block;
+        padding: 10px 15px;
+        text-decoration: none;
+        color:white;
+    }
+    
+    
+    .rosario {
+         color: green;
+    }
+    
+    nav li.current-page a {
+        display: inline-block;
+        padding: 16px 21px;
+        text-decoration: none;
+        color: #00594c;
+        background-color: #5df2d6;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    
+    .text{
+        text-align: center;
+        border-radius: 5px;
+        border-style: ridge;
+    }
+    
+    .email{
+        text-align: center;
+        border-radius: 5px;
+        border-style: ridge;
+    }
+    
+    .comentario{
+        text-align: center;
+        border-radius: 5px;
+        border-style: ridge;
+    }
+    
+    .limpiar{
+        text-align: center;
+        margin-top: 12px;
+        background-color: var(--color-theme);
+        color: white;
+        font-weight: bold;
+        padding: 12px;
+        border-radius: 10px;
+        border: none;
+        margin-bottom: 30px;
+    }
+    
+    .enviar{
+        text-align: center;
+        margin-top: 12px;
+        background-color: #00594c;
+        color: white;
+        font-weight: bold;
+        padding: 12px;
+        border-radius: 10px;
+        border: none;
+        margin-bottom: 30px;
+    }
+    
+    .cuadros{
+        text-align: center;
+    }
+    
+    .error{
+        text-align: center;
+        background-color: #dc3545;
+        border-radius: 15px;
+        padding: 10px;
+        color:white;
     }

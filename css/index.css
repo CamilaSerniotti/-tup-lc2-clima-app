@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    :root {
+        /* Declaro variables CSS con colores principales */
+        --color-theme: #00594c;
+        --color-active: #5df2d6;
+        --color-back-active: #04957d;
+        --color-gradient: linear-gradient(to right, var(--color-theme),
+    var(--color-back-active));
+    }
+    body {
+        height: 100%;
+        width: 100%;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    button,
+    a {
+        user-select: none;
+        -webkit-user-select: none;
+    }
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: var(--color-theme);
+        border-bottom-left-radius: 22px;
+        border-bottom-right-radius: 22px;
+        box-shadow: 0px 2px 3px 0px #5df2d6;
+        -webkit-box-shadow: 0px 2px 3px 0px #5df2d6;
+        -moz-box-shadow: 0px 2px 3px 0px #5df2d6;
+        border-color: #5df2d6;
+        background: #00594c;
+        background: linear-gradient(360deg, #00594c 0%, #0e958d 80%);
+        background: -webkit-linear-gradient(360deg, #00594c 0%, #0e958d 80%);
+        background: -moz-linear-gradient(360deg, #00594c 0%, #0e958d 80%);
+    }
+    nav>ul {
+        display: flex;
+        justify-content: space-between;
+        justify-content: center;
+    }
+    nav li {
+        flex: 0 0 auto;
+    }
+    nav li a {
+        display: block;
+        padding: 16px 12px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1em;
+        font-weight: bold;
+        color: var(--color-active);
+        font-family: sans-serif;
+    }
+    nav li.current-page a {
+        display: inline-block;
+        padding: 16px 21px;
+        text-decoration: none;
+        color: var(--color-theme);
+        background-color: var(--color-active);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    main
+        {
+        margin-top: 120px;
+        overflow: auto;
+        padding: 16px;
+        padding-bottom: 60px;
+        height: calc(100%- 120px);
+    }
+    h1 {
+        text-align:center;
+        margin: 0;
+        color: white;
+        font-family: sans-serif;
+    }
+    h1>img {
+        width:  70px;
+        vertical-align: middle;
+    }
+    h2 {
+        color: var(--color-theme);
+        margin: 16px 0;
+        text-align: center;
+        font-family: sans-serif;
+    }
+    h3 {
+        color: var(--color-theme);
+        margin: 8px 0;
+    }
+    main section {
+        display: flex;
+        justify-content: space-around;
+    }
+    footer {
+        position: fixed;
+        bottom: 0px;
+        background: #00594c;
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: #00594c;
+        background: linear-gradient(360deg, #00594c 0%, #0e958d 80%);
+        background: -webkit-linear-gradient(360deg, #00594c 0%, #0e958d 80%);
+        background: -moz-linear-gradient(360deg, #00594c 0%, #0e958d 80%);
+        box-shadow: 0px -2px 3px 0px #5df2d6;
+        -webkit-box-shadow: 0px -2px 3px 0px #5df2d6;
+        -moz-box-shadow: 0px -2px 3px 0px #5df2d6;
+    }
+    footer p {
+        font-size: small;
+        color: white;
+    }
+    main p {
+        margin-bottom: 16px;
+    }
+    /* Media Query: Estilos a aplicar sólo en pantallas mayores a 400px */
+    @media (min-width: 400px) {
+        main {
+        padding-left: 10%;
+        padding-right: 10%;
+        }
+        footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        }
+    }
+    .nav-item a:hover {
+        display: inline-block;
+        padding: 10px 15px;
+        text-decoration: none;
+        color: white;
+    }
+    
+    
+    .rosario {
+        color: #00594c;
+        text-align: center;
+    }
+    
+    .Boton{
+        background-color: #00594c;
+        color: white;
+        border: none;
+        border-radius: 8px;
+    }
+    
+    .seleccionable{
+        border-radius: 5px;
+        border-style: ridge;
+    }
+    
+    .card{
+        text-align: center;
+        font-size: medium;
+        margin-top: 30px;
+        border-radius: 40px;
+        position:fixed;
+        bottom:flex;
+        font-family: verdana, Sans-serif;
+        font-weight: bold;
+        box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.75);
+    }
+    
+      
