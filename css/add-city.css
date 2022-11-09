@@ -2,7 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    text-align: center;
     }
     :root {
         /* Declaro variables CSS con colores principales */
@@ -38,9 +39,9 @@
         -moz-box-shadow: 0px 2px 3px 0px #5df2d6;
         border-color: #5df2d6;
         background: #00594c;
-        background: linear-gradient(360deg, #00594c 0%, #0e958d 80%);
-        background: -webkit-linear-gradient(360deg, #00594c 0%, #0e958d 80%);
-        background: -moz-linear-gradient(360deg, #00594c 0%, #0e958d 80%);
+        background: linear-gradient(360deg, #00594c 0%, #04957d 80%);
+        background: -webkit-linear-gradient(360deg, #00594c 0%, #04957d 80%);
+        background: -moz-linear-gradient(360deg, #00594c 0%, #04957d 80%);
     }
     nav>ul {
         display: flex;
@@ -106,9 +107,9 @@
         padding-top: 10px;
         padding-bottom: 10px;
         background: #00594c;
-        background: linear-gradient(360deg, #00594c 0%, #0e958d 80%);
-        background: -webkit-linear-gradient(360deg, #00594c 0%, #0e958d 80%);
-        background: -moz-linear-gradient(360deg, #00594c 0%, #0e958d 80%);
+        background: linear-gradient(360deg, #00594c 0%, #04957d 80%);
+        background: -webkit-linear-gradient(360deg, #00594c 0%, #04957d 80%);
+        background: -moz-linear-gradient(360deg, #00594c 0%, #04957d 80%);
         box-shadow: 0px -2px 3px 0px #5df2d6;
         -webkit-box-shadow: 0px -2px 3px 0px #5df2d6;
         -moz-box-shadow: 0px -2px 3px 0px #5df2d6;
@@ -152,25 +153,30 @@
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
-    
+
+    #cartel{
+        color:white;
+        padding: 12px;
+        border-radius: 10px;
+    }
     .success{
         background-color:#28a745 ;
-        border-radius: 15px;
-        padding: 10px;
+        border-radius: 10px;
+        padding: 12px;
         color:white;
     }
     
     .error{
         background-color: #dc3545;
-        border-radius: 15px;
-        padding: 10px;
+        border-radius: 10px;
+        padding: 12x;
         color:white;
     }
     
     .warning{
         background-color:#ffc107 ;
-        border-radius: 15px;
-        padding: 10px;
+        border-radius: 10px;
+        padding: 12px;
         color:white;
     }
     
@@ -194,10 +200,4 @@
         border-radius: 4px;
     }
     
-    .table{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        border-radius: 15px;
-    }   
+   

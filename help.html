@@ -6,11 +6,15 @@
     <title>TUP LC2 - TP Integrador</title>
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/help.css">
+    <!-- Javascript -->
+    <script src="js/help.js" defer></script>
+    <script src="js/common.js"type="module"></script>
+    
 </head>
 <body>
     <header>
         <h1>
-            <img src="img/sol.png" alt="Sol" width="50" height="50">
+            <img src="img/clima.png" alt="Sol" width="50" height="50">
             <span>Clima App</span>
         </h1>
         <nav>
@@ -29,13 +33,13 @@
                 <p>Para poder consultar el clima, primero deberá <a href="./add-city.html">Agregar una ciudad</a> y luego seleccionar la Ciudad en cuestion desde la página <a href="./index.html">Clima.</a></p>
                 <section id="form-city-list" class="cuadros">
                     <form action="">
-                        <p><label for="Nombre">Nombre:</label>
-                            <input type="text" name="Nombre"/>
+                        <p><label for="Text">Nombre:</label>
+                            <input type="text" class="text" style="width: 255px; height: 32px;"></p>
                             <br>
                         <p><label for="Email">Email:</label>
-                            <input type="email" name="Email"/>
+                            <input type="email" required class="email" style="width: 255px;height: 32px;"></p>
                             <br>
-                        <p><label for="campoDeTexto">Mensaje:</label>
+                        <p><label for="CampoDeTexto">Mensaje:</label>
                             <textarea name="Texto" id="" cols="40" rows="10"></textarea>
                             <br>
                         </p>

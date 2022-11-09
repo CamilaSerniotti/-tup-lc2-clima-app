@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
     }
     :root {
         /* Declaro variables CSS con colores principales */
@@ -12,6 +12,7 @@
         --color-gradient: linear-gradient(to right, var(--color-theme),
     var(--color-back-active));
     }
+
     body {
         height: 100%;
         width: 100%;
@@ -38,18 +39,21 @@
         -moz-box-shadow: 0px 2px 3px 0px #5df2d6;
         border-color: #5df2d6;
         background: #00594c;
-        background: linear-gradient(360deg, #00594c 0%, #0e958d 80%);
-        background: -webkit-linear-gradient(360deg, #00594c 0%, #0e958d 80%);
-        background: -moz-linear-gradient(360deg, #00594c 0%, #0e958d 80%);
+        background: linear-gradient(360deg, #00594c 0%, #04957d 80%);
+        background: -webkit-linear-gradient(360deg, #00594c 0%, #04957d 80%);
+        background: -moz-linear-gradient(360deg, #00594c 0%, #04957d 80%);
     }
+
     nav>ul {
         display: flex;
         justify-content: space-between;
         justify-content: center;
     }
+
     nav li {
         flex: 0 0 auto;
     }
+
     nav li a {
         display: block;
         padding: 16px 12px;
@@ -60,6 +64,7 @@
         color: var(--color-active);
         font-family: sans-serif;
     }
+
     nav li.current-page a {
         display: inline-block;
         padding: 16px 21px;
@@ -69,6 +74,7 @@
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
+
     main
         {
         margin-top: 120px;
@@ -77,30 +83,36 @@
         padding-bottom: 60px;
         height: calc(100%- 120px);
     }
+
     h1 {
         text-align:center;
         margin: 0;
         color: white;
         font-family: sans-serif;
     }
+
     h1>img {
         width:  70px;
         vertical-align: middle;
     }
+
     h2 {
         color: var(--color-theme);
         margin: 16px 0;
         text-align: center;
         font-family: sans-serif;
     }
+
     h3 {
         color: var(--color-theme);
         margin: 8px 0;
     }
+
     main section {
         display: flex;
         justify-content: space-around;
     }
+
     footer {
         position: fixed;
         bottom: 0px;
@@ -110,17 +122,19 @@
         padding-top: 10px;
         padding-bottom: 10px;
         background: #00594c;
-        background: linear-gradient(360deg, #00594c 0%, #0e958d 80%);
-        background: -webkit-linear-gradient(360deg, #00594c 0%, #0e958d 80%);
-        background: -moz-linear-gradient(360deg, #00594c 0%, #0e958d 80%);
+        background: linear-gradient(360deg, #00594c 0%, #04957d 80%);
+        background: -webkit-linear-gradient(360deg, #00594c 0%, #04957d 80%);
+        background: -moz-linear-gradient(360deg, #00594c 0%, #04957d 80%);
         box-shadow: 0px -2px 3px 0px #5df2d6;
         -webkit-box-shadow: 0px -2px 3px 0px #5df2d6;
         -moz-box-shadow: 0px -2px 3px 0px #5df2d6;
     }
+
     footer p {
         font-size: small;
         color: white;
     }
+
     main p {
         margin-bottom: 16px;
     }
@@ -135,6 +149,7 @@
         padding-bottom: 20px;
         }
     }
+
     .nav-item a:hover {
         display: inline-block;
         padding: 10px 15px;
@@ -160,7 +175,8 @@
         border-style: ridge;
     }
     
-    .card{
+    #card{
+        display: none;
         text-align: center;
         font-size: medium;
         margin-top: 30px;

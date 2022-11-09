@@ -2,16 +2,20 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="Img/clima.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TUP LC2 - TP Integrador</title>
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/index.css">
+    <!-- Javascript -->
+    <script src="js/index.js" defer></script>
+    <script src="js/common.js"type="module"></script>
+    
 </head>
-<body>
+<body onload="opciones()">
     <header>
-        
         <h1>
-            <img src="img/sol.png" alt="Sol" width="50" height="50">
+            <img src="img/clima.png" alt="Sol" width="50" height="50">
             <span>Clima App</span>
         </h1>
         <nav>
@@ -25,34 +29,31 @@
     <!-- Contenido principal de la página -->
     <main>
         <h2>El clima Ahora</h2>
-            <section id="form-city-list"><!-- Sección donde se debe colocar el formulario, con el select y el botón de consultar -->
-                <form action="">
-                    <label for="seleccionable"></label>
-                    <select name="seleccionable" id="seleccionable" style="width: 188px;height: 36px;" class="seleccionable">
-                            <option value=""- disabled - selected >Seleccionar ciudad</option>
-                            <option value="Rosario">Rosario</option>
-                            <option value="Rafaela">Rafaela</option>
-                        </select>
-                        <button class="Boton" style=" width: 100px;height: 34px;" >Consultar</button>
-                </form>
-            </section>
-
-            <section id="section-weather-result">
-                <div class="card">
-                    <h3 class="rosario">Rosario</h3>
-                    <br>
-                    <img src="img/clima.jpg" alt="Clima" width="60" height="60"/>
-                    <br>
-                    <h4>
-                        <p>Temperatura 25.31°</p>
-                        <p>Sensación termica 24.65°</p>
-                        <p>Humedad: 29%</p>
-                        <p>Velocidad del viento: 4.63km/h</p>
-                        <p>Presión: 1011 P</p>
-                    </h4>
+        <section id="form-city-list"><!-- Sección donde se debe colocar el formulario, con el select y el botón de consultar -->
+            <form action="">
+                <label onclick="" for="seleccionable"></label>
+                <select onclick="" name="seleccionable" id="seleccionable" style="width: 188px;height: 36px;" class="seleccionable">
+                    <option value="0"- disabled - selected >Seleccionar ciudad</option>
+                </select>
+                <input id="boton" class="Boton" type="button" value="Consultar" style=" width: 80px;height: 34px;" onclick="ConsultarApi()">
+                        
+            </form>
+        </section>
+        <section id="section-weather-result">
+                <div id="card" class="card">
+                    <h3 id="ciudades" class="ciudades"></h3>
+                    <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="">
+                    <p id="temp"></p>
+                    <p id="termica"></p>
+                    <p id="humedad"></p>
+                    <p id="viento"></p>
+                    <p id="presion"></p>
+                </div>
+                <div id="error">
+                    <p></p>
                 </div>
                 
-            </section><!-- Sección donde se debe mostrar el clima de la ciudad -->
+        </section><!-- Sección donde se debe mostrar el clima de la ciudad -->
     </main>
     <footer>
         <p>

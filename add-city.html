@@ -6,11 +6,14 @@
     <title>TUP LC2 - TP Integrador</title>
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/add-city.css">
+    <!-- Javascript -->
+    <script src="js/add-city.js" defer></script>
+    <script src="js/common.js"type="module"></script>
 </head>
 <body>
     <header>
         <h1>
-            <img src="img/sol.png" alt="Sol" width="50" height="50">
+            <img src="img/clima.png" alt="Sol" width="50" height="50">
             <span>Clima App</span>
         </h1>
         <nav>
@@ -24,23 +27,16 @@
     <!-- Contenido principal de la página -->
     <main>
         <h2>Agregar Ciudad </h2>
-            <section id="form-city-list">
-                <form action="" class="texto">
-                    <p>Ingrese la ciudad a agregar:</p> 
-                    <label for="text"></label>
-                    <input type="text" class="text" style="width: 245px;height: 36px;">
-                    <br>
-                   <button class="boton" >Agregar</button>
-                </form>
+        <section id="form-city-list">
+            <form action="" class="texto">
+                <p>Ingrese la ciudad a agregar:</p> 
+                <label for="text"></label>
+                <input onsubmit="addCityToLocalStorage()" type="text" class="text" style="width: 245px; height: 36px;" id="entrada">
                 <br>
-            </section>
-            <br>
-            <p class="success">Ciudad agregada con éxito</p><br>
-            <p class="error">Error: La ciudad ingresada no se encuentra en la API o se produjo un error al consultar </p><br> 
-            <p class="warning">La ciudad ingresada ya se encuentra almacenada</p><br>
-            <section id="section-weather-result">
-            
-            </section>
+                <button type="button" class="boton" onclick="addCityToLocalStorage()">Agregar</button>
+            </form>    
+        </section>
+        <div class="cartel" id="cartel"></div>
     </main>
     <footer>
         <p>
